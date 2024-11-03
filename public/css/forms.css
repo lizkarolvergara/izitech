@@ -1,0 +1,104 @@
+@import url('variables.css');
+@import url('general.css');
+
+/* FORMULARIOS DE INICIO Y REGISTRO */
+
+.formulario {
+    padding: 4rem;
+    background-color: var(--gris--5);
+}
+
+fieldset {
+    background-color: var(--blanco);
+    width: 40%;
+    border: 1px solid var(--gris--4);
+    padding: 1rem;
+    box-shadow: 0 2px 5px var(--gris--3);
+}
+
+legend {
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+label{
+    padding-bottom: 0.2rem;
+    padding-inline: 0.2rem;
+}
+
+.form__input {
+    background-color: var(--gris--5);
+    display: grid;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    grid-template-rows: 1fr;
+    border: none;
+}
+
+.form__input input {
+    border: none;
+    padding: 1rem 0;
+    background-color: var(--gris--5);
+}
+.form__input input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--primario-1);
+}
+
+.form__button {
+    border: none;
+    padding: 1rem 0;
+}
+
+
+.textref {
+    margin-top: 0.5rem;
+    color: var(--primario);
+    text-decoration: none;
+    background-color: inherit;
+    border: none;
+    font-size: 1.5rem;
+    transition: font-weight 0.3s ease;
+}
+.textref:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+.aligntext {
+    padding-left: 0.5rem;
+}
+
+.form__input--select {
+    padding: 0.5rem 0;
+    background-color: var(--gris--5);
+}
+.form__input--select option:disabled {
+    color: var(--gris-1); 
+}
+.form__input--select:focus {
+    outline: none; 
+}
+
+.tyc {
+    display: flex;
+    padding: 0.2rem;
+}
+.tyc label {
+    padding: 0.2rem;
+}
+
+.text_recuperar{
+    font-size: 1rem;
+    color: var(--gris-1);
+}
+.input_text_recuperar{
+    display: grid;
+    padding-left: 0.6rem;
+    grid-template-rows: 1fr
+}
+
+
+
+
+

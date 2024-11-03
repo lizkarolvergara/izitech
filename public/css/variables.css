@@ -1,0 +1,40 @@
+:root {
+    /* Colores primarios */
+    --primario-3: #1C1B4F;
+    --primario-2: #2A2977;
+    --primario-1: #38369E;
+    --primario: #4644C6;
+    --primario--1: #6B69D1;
+    --primario--2: #908FDD;
+    --primario--3: #B5B4E8;
+    /* Colores secundarios */
+    --secundario-3: #0B5766;
+    --secundario-2: #118399;
+    --secundario-1: #16AECC;
+    --secundario: #1CDAFF;
+    --secundario--1: #49E1FF;
+    --secundario--2: #77E9FF;
+    --secundario--3: #A4F0FF;
+    /* Colores terciarios */
+    --terciario-3: #1C421A;
+    --terciario-2: #296326;
+    --terciario-1: #378433;
+    --terciario: #45A540;
+    --terciario--1: #6AB766;
+    --terciario--2: #8FC98C;
+    --terciario--3: #B5DBB3;
+    /* Grises */
+    --gris-3: #333333; 
+    --gris-2: #4D4D4D; 
+    --gris-1: #666666; 
+    --gris: #808080; 
+    --gris--1: #999999; 
+    --gris--2: #B3B3B3; 
+    --gris--3: #CCCCCC; 
+    --gris--4: #E6E6E6;
+    --gris--5: #fafafa; 
+    /* Neutrales */
+    --blanco: #FFFFFF;
+    --negro: #000000;
+
+}
