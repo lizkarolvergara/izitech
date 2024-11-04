@@ -139,6 +139,9 @@ select {
 .navbar__category svg {
     padding: 0 1rem;
 }
+
+/* desplegable */
+
 .dropdown-content {
     display: none; 
     position: absolute; 
@@ -274,4 +277,14 @@ footer {
 
 .body-scroll {
     padding-top: 90.4px; /* Ajusta según la altura de tu header */
+}
+
+/*carrito*/
+.carrito {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+.carrito span {
+    padding: 1rem;
 }
