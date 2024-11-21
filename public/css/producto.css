@@ -1,22 +1,22 @@
 @import url('variables.css');
 @import url('general.css');
-
+ 
 .uniqueproduct {
     width: 120rem;
-    margin: 3rem 1.5rem;
+    margin: 5rem 1.5rem;
     padding: 1rem 0;
     border: 1px solid var(--gris--4);
     background-color: var(--blanco);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 5px var(--gris--3);
 }
 .uniqueproduct__img {
-    width: 40rem;
-    height: 40rem;
-    overflow: hidden; 
+    width: 60rem;
+    height: 60rem;
+    overflow: hidden;
 }
 .uniqueproduct__img img {
     width: 100%;
@@ -28,12 +28,18 @@
     transform: scale(1.1);
 }
 .uniqueproduct__tittle {
+    width: 50rem;
     font-weight: bold;
     font-size: 2rem;
-    line-height: 3;
 }
-
+.margin {
+    display: flex;
+    flex-direction: column;
+    margin: 8rem 0;
+}
+ 
 .disc__price {
+    margin-top: 1rem;
     font-size: 1.8rem;
     color: var(--primario);
     font-weight: bold;
@@ -53,11 +59,12 @@
     font-size: 1.8rem;
 }
 .cantidad {
+    width: 23rem;
     margin: 1rem 0;
     padding: 0.5rem 1.5rem 0.5rem 0;
     border: 1px solid var(--gris--4);
 }
-
+ 
 .input-number {
     background-color: var(--blanco);
     border: none;
@@ -67,24 +74,121 @@
     font-size: 1.5rem;
     text-align: center;
 }
-
+ 
 .compra {
     padding: 1rem 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
 }
-
+ 
 .caracteristicas {
     padding: 0 3rem;
+}
+.marca {
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 table {
     border-collapse: collapse;
 }
-
-tr {
+ 
+.tablecart tr {
     line-height: 2;
 }
 .tr1 {
     background-color: var(--gris--4);
+}
+.tablecart td {
+    width: 50rem;
+    padding: 1rem;
+}
+
+.tablecart tr {
+    width: 50rem;
+}
+
+/* carrito */
+.cartproduct { 
+    width: 100rem;
+    margin: 5rem 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--gris--4);
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px var(--gris--3);
+}
+.cartproduct__img { 
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden; 
+    margin: 0 5rem;
+}
+.cartproduct__img img { 
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.cantidad-2 {
+    width: 6rem;
+    height: 2.5rem;
+    margin: 1rem 0;
+    padding: 0.5rem 1.5rem 0.5rem 0;
+    border: 1px solid var(--gris--4);
+}
+
+.input-number-2 {
+    background-color: var(--blanco);
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.centergap {
+    align-items: center;
+}
+.eliminar {
+    padding: 0 3rem 0 0;
+}
+.compra-2 {
+    justify-content: start;
+    width: 30rem;
+    height: 25rem;
+}
+.compra-2 button {
+    margin: 2rem;
+}
+
+.tablecompra td {
+    width: 10rem;
+    padding: 1rem;
+}
+.resumen {
+    width: 100%;
+    background-color: var(--gris);
+    color: var(--blanco);
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem 0;
+}
+.eliminar {
+    color: var(--primario);
+}
+.eliminar:hover {
+    cursor: pointer;
 }

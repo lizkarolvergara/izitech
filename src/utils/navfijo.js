@@ -6,6 +6,7 @@ function iniciarApp() {
     navegacionFija();
 }
 
+/* BNAVEGADOR FIJO */
 function navegacionFija() {
     const barra = document.querySelector('header');
     const body = document.querySelector('body')
@@ -22,3 +23,6 @@ function navegacionFija() {
         }
     });
 }
+
+
+

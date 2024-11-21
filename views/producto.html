@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>IziTech | Regístrate</title>
+    <title>IziTech | Apple Iphone 14 128gb</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,14 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="public/css/forms.css">
-    
+    <link rel="stylesheet" href="../public/css/producto.css">
+
+      
 </head>
 <body>
     <header>
         <div class="header">
             <a href="index.html">
-                <img src="public/images/izitech.png">
+                <img src="../public/images/izitech.png">
             </a>
             <div class="header-left">
                 <div class="header__search">
@@ -57,6 +58,7 @@
                         <path d="M17 17h-11v-14h-2"></path>
                         <path d="M6 5l14 1l-1 7h-13"></path>
                     </svg>
+                    <span id="cartCount" class="cart-count" style="display: none;">0</span>
                 </a>
         
             </div>
@@ -118,62 +120,89 @@
     </header>
 
     <main>
-        <div class="formulario flexcenter">
-            <fieldset>
-                <legend>Formulario de registro</legend>
-                <form action="" method="post">
-                    <div class="form__input">
-                        <label for="correo">Correo:</label>
-                        <input type="email" name="correo" id="correo" placeholder="Ingresa tu email" required>
+
+        <section>
+            <div class="flexcenter">
+                <div class="uniqueproduct">
+                    <div class="flexcenter">
+                        <div class="uniqueproduct__img">
+                            <img src="../public/images/celulares/1.jpg" alt="Apple Iphone 14 128gb" >
+                        </div>
+                        <div>
+                            <div class="margin">
+                                <span class="uniqueproduct__tittle">Apple Iphone 14 128gb</span>
+                                <div>
+                                    <span class="disc__price">S/ 3,299</span>
+                                    <span class="disc__product">-18%</span>
+                                </div>
+                                <span class="price-strike">S/ 4,000</span>
+                            </div>
+                            <div class="cantidad">
+                                <input type="number" value="1" min="1" max="10" step="1"class="input-number">
+                                <span>Máximo 10 unidades</span>
+                            </div>
+                            
+                            <div class="compra">
+                                <button class="button-general" id="agregarCarrito">Agregar al carrito</button>
+                                <button class="button-general">Comprar ahora</button>
+                            </div>
+                            <span>Unidades disponibles +10</span>
+                        </div>
                     </div>
-                    <div class="form__input">
-                        <label for="nombre">Nombres:</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+                    <div class="caracteristicas">
+                        <span class="bold">Características</span>
+                        <table>
+                            <tr class="tr1">
+                                <td>Procesador específico</td>
+                                <td>Apple Chip A15 Bionic</td>
+                            </tr>
+                            <tr class="tr2">
+                                <td>Características de la pantalla</td>
+                                <td>Retina</td>
+                            </tr>
+                            <tr class="tr1">
+                                <td>Resistente al agua</td>
+                                <td>IP68 (Protegido contra inmersión)</td>
+                            </tr>
+                            <tr class="tr2">
+                                <td>Alto</td>
+                                <td>14.67 cm</td>
+                            </tr>
+                            <tr class="tr1">
+                                <td>Ancho</td>
+                                <td>7.15 cm</td>
+                            </tr>
+                            <tr class="tr2">
+                                <td>Tamaño de la pantalla</td>
+                                <td>6.1 pulgadas</td>
+                            </tr>
+                            <tr class="tr1">
+                                <td>Modelo</td>
+                                <td>MPUF3BE/A</td>
+                            </tr>
+                            <tr class="tr2">
+                                <td>Capacidad de almacenamiento</td>
+                                <td>128 GB</td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="form__input">
-                        <label for="apellido">Apellidos:</label>
-                        <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
-                    </div>
-                    <div class="form__input">
-                        <label for="documento">Tipo de documento:</label>
-                        <select name="documento" class="form__input--select">
-                            <option value="" disabled selected>Tipo</option>
-                            <option value="dni">DNI</option>
-                            <option value="carnet">Carnet de extranjería</option>
-                        </select>
-                    </div>
-                    <div class="form__input">
-                        <label for="nrodoc">N° de documento:</label>
-                        <input type="text" name="nrodoc" placeholder="Ingresa tu número de documento">
-                    </div>
-                    <div class="form__input">
-                        <label for="celular">Celular:</label>
-                        <input type="text" name="celular" id="celular" placeholder="Ingresa tu número de celular">
-                    </div>
-                    <div class="form__input">
-                        <label for="pass">Contraseña:</label>
-                        <input type="password" name="pass" id="pass" placeholder="Ingresa una contraseña">
-                    </div>
-                    <div class="tyc">
-                        <input type="checkbox" name="tyc" class="checkbox">
-                        <label for="tyc">Al utilizar este formulario, acepta que este sitio web almacene y maneje sus datos.</label>
-                    </div>
-                    <div class="form__button">
-                        <input type="submit" value="Registrarme" class="button-general">
-                    </div> 
-                    <div>
-                        <span>¿Ya tienes cuenta? <a href="iniciar-sesion.html" class="textref">Inicia sesión</a></span>
-                    </div>
-                </form>
-            </fieldset>
-        </div>
+
+                    
+                </div>
+                
+
+
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
         <div class="footer">
             <div class="footer__column">
                 <div>
-                    <img src="public/images/izitech.png" alt="">
+                    <img src="../public/images/izitech.png" alt="Apple iPhone 14">
                 </div>
                 <div>
                     <span>Sigue nuestras redes</span>
@@ -224,6 +253,6 @@
         </div>
     </footer>
 
-    <script src="public/js/scripts.js"></script>
+    <script src="../scripts.js"></script>
 </body>
 </html>

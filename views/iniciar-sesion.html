@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="public/css/forms.css">
+    <link rel="stylesheet" href="../public/css/forms.css">
 
       
 </head>
@@ -17,7 +17,7 @@
     <header>
         <div class="header">
             <a href="index.html">
-                <img src="public/images/izitech.png">
+                <img src="../public/images/izitech.png">
             </a>
             <div class="header-left">
                 <div class="header__search">
@@ -119,20 +119,33 @@
     </header>
 
     <main>
-        <div class="flexcenter">
-            <div class="carrito">
-                <div class="flexcenter">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M13 17h-7v-14h-2" /><path d="M6 5l14 1l-1 7h-13" /><path d="M22 22l-5 -5" /><path d="M17 22l5 -5" /></svg>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1.25"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mood-sad"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M9 10l.01 0" /><path d="M15 10l.01 0" /><path d="M9.5 15.25a3.5 3.5 0 0 1 5 0" /></svg>
-                </div>
-                <div class=" carrito flexcenter">
-                    <span class="bold center">Tu carrito de compras está vacío</span>
-                    <span class="center">Regresa a nuestra página principal y descubre todos nuestros productos</span>
-                </div>
-                <div class="seeall">
-                    <a href="index.html" class="button-general">Inicio</a>
-                </div>
-            </div>
+        <div class="formulario flexcenter">
+            <fieldset>
+                <legend>Iniciar Sesión</legend>
+                <form method="post">
+                    <div class="form__input">
+                        <label for="usuario">Correo:</label>
+                        <input type="email" id="correo" name="correo" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="form__input">
+                        <label for="pass">Contraseña:</label>
+                        <input type="password" id="pass" name="pass" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                    <div class="aligntext">
+                        <a href="recuperar-contrasena.html" class="textref">¿Olvidaste la contraseña?</a>
+                    </div>
+                    <div class="form__button flexcenter">
+                        <input type="submit" value="Ingresar" class="button-general">
+                    </div>
+                    <div class="flexcenter">
+                        <span>¿No tienes una cuenta?</span>
+                    </div>
+                    <div class="form__button flexcenter">
+                        <a href="registrate.html" class="textref">Regístrate</a>
+                    </div>
+                </form>
+                
+            </fieldset>
         </div>
     </main>
 
@@ -140,7 +153,7 @@
         <div class="footer">
             <div class="footer__column">
                 <div>
-                    <img src="public/images/izitech.png" alt="">
+                    <img src="../public/images/izitech.png" alt="">
                 </div>
                 <div>
                     <span>Sigue nuestras redes</span>
@@ -191,6 +204,6 @@
         </div>
     </footer>
     
-    <script src="public/js/scripts.js"></script>
+    <script src="../scripts.js"></script>
 </body>
 </html>

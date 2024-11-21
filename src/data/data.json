@@ -1,0 +1,201 @@
+[
+    {
+        "id": 1,
+        "codigo": "S00001",
+        "nombre": "Apple Iphone 14 128gb",
+        "descripcion": "",
+        "categoria": "Smartphones",
+        "marca": "Apple",
+        "precio": 3299,
+        "stock": 15,
+        "imagen": "../../public/images/celulares/1.jpg"
+    },
+    {
+        "id": 2,
+        "codigo": "S00002",
+        "nombre": "Galaxy A55 8gb 256gb",
+        "descripcion": "",
+        "categoria": "Smartphones",
+        "marca": "Samsung",
+        "precio": 1599,
+        "stock": 15,
+        "imagen": "../../public/images/celulares/2.jpg"
+    },
+    {
+        "id": 3,
+        "codigo": "S00003",
+        "nombre": "Moto G24 256gb",
+        "descripcion": "",
+        "categoria": "Smartphones",
+        "marca": "Motorola",
+        "precio": 799,
+        "stock": 15,
+        "imagen": "../../public/images/celulares/3.jpg"
+    },
+    {
+        "id": 4,
+        "codigo": "S00004",
+        "nombre": "Celular Xiaomi Redmi Note 13 Pro+ 5G 6.67\" 12GB 512GB Midnight Black",
+        "descripcion": "",
+        "categoria": "Smartphones",
+        "marca": "Xiaomi",
+        "precio": 1799,
+        "stock": 15,
+        "imagen": "../../public/images/celulares/4.jpg"
+    },
+    {
+        "id": 5,
+        "codigo": "S00005",
+        "nombre": "Redmi 12C 4G 128GB 4GB - Negro",
+        "descripcion": "",
+        "categoria": "Smartphones",
+        "marca": "Redmi",
+        "precio": 569,
+        "stock": 15,
+        "imagen": "../../public/images/celulares/5.jpg"
+    },
+    {
+        "id": 6,
+        "codigo": "S00006",
+        "nombre": "Celular Samsung Galaxy A34 6.6\" 8GB RAM 256GB Grafito",
+        "descripcion": "",
+        "categoria": "Smartphones",
+        "marca": "Samsung",
+        "precio": 1359,
+        "stock": 15,
+        "imagen": "../../public/images/celulares/6.jpg"
+    },
+    {
+        "id": 7,
+        "codigo": "L00001",
+        "nombre": "Laptop Gamer HP Victus Gaming 15-fb0125la AMD Ryzen 7 5800H 15,6\" 16 GB RAM 512 GB SSD",
+        "descripcion": "",
+        "categoria": "Laptops",
+        "marca": "HP",
+        "precio": 3400,
+        "stock": 15,
+        "imagen": "../../public/images/laptops/1.jpg"
+    },
+    {
+        "id": 8,
+        "codigo": "L00002",
+        "nombre": "Laptop Gamer Asus ROG Strix G17 G713RM-LL046W AMD Ryzen 9 16GB RAM 1TB SSD 17.3\" RTX 3060",
+        "descripcion": "",
+        "categoria": "Laptops",
+        "marca": "Asus",
+        "precio": 6800,
+        "stock": 15,
+        "imagen": "../../public/images/laptops/2.jpg"
+    },
+    {
+        "id": 9,
+        "codigo": "L00003",
+        "nombre": "Laptop Gamer HP Victus Gaming 15-fb0123la AMD Ryzen 5 5600H 15,6\" 16 GB RAM 512 GB SSD",
+        "descripcion": "",
+        "categoria": "Laptops",
+        "marca": "HP",
+        "precio": 3300,
+        "stock": 15,
+        "imagen": "../../public/images/laptops/3.jpg"
+    },
+    {
+        "id": 10,
+        "codigo": "L00004",
+        "nombre": "Laptop Gamer HP Victus Gaming 15-fb0123la AMD Ryzen 5 5600H 15,6\" 16 GB RAM 512 GB SSD",
+        "descripcion": "",
+        "categoria": "Laptops",
+        "marca": "HP",
+        "precio": 3300,
+        "stock": 15,
+        "imagen": "../../public/images/laptops/4.jpg"
+    },
+    {
+        "id": 11,
+        "codigo": "L00005",
+        "nombre": "Laptop Gamer Lenovo Legion 5i 82RB00HXLM Intel Core i7 14 Núcleos 16GB RAM 512GB SSD 15.6\"",
+        "descripcion": "",
+        "categoria": "Laptops",
+        "marca": "Lenovo",
+        "precio": 7100,
+        "stock": 15,
+        "imagen": "../../public/images/laptops/5.jpg"
+    },
+    {
+        "id": 12,
+        "codigo": "L00006",
+        "nombre": "Laptop Gamer Lenovo IdeaPad Gaming3 15IAH7 i5-12450H 8GB RAM 512GB SSD RTX3060",
+        "descripcion": "",
+        "categoria": "Laptops",
+        "marca": "Lenovo",
+        "precio": 3200,
+        "stock": 15,
+        "imagen": "../../public/images/laptops/6.jpg"
+    },
+    {
+        "id": 13,
+        "codigo": "A00001",
+        "nombre": "Teclado Gamer Xtrike Me Kb-306 Sp Rgb Backlit",
+        "descripcion": "",
+        "categoria": "Accesorios",
+        "marca": "Teclados",
+        "precio": 69.90,
+        "stock": 15,
+        "imagen": "../../public/images/accesorios/1.jpg"
+    },
+    {
+        "id": 14,
+        "codigo": "A00002",
+        "nombre": "Cooler para laptop cybercool N-99 con cable USB",
+        "descripcion": "",
+        "categoria": "Accesorios",
+        "marca": "Coolers",
+        "precio": 89,
+        "stock": 15,
+        "imagen": "../../public/images/accesorios/2.jpg"
+    },
+    {
+        "id": 15,
+        "codigo": "A00003",
+        "nombre": "Mouse Gamer Xtrike Me Gm-110 Rgb Backlit",
+        "descripcion": "",
+        "categoria": "Accesorios",
+        "marca": "Mouse",
+        "precio": 29.90,
+        "stock": 15,
+        "imagen": "../../public/images/accesorios/3.jpg"
+    },
+    {
+        "id": 16,
+        "codigo": "A00004",
+        "nombre": "Camara Web Logitech BRIO 100 FHD 1080P Negro",
+        "descripcion": "",
+        "categoria": "Accesorios",
+        "marca": "Camaras web",
+        "precio": 208,
+        "stock": 15,
+        "imagen": "../../public/images/accesorios/4.jpg"
+    },
+    {
+        "id": 17,
+        "codigo": "A00005",
+        "nombre": "Memoria USB Rotable TypeC+USB3.0 256GB",
+        "descripcion": "",
+        "categoria": "Accesorios",
+        "marca": "Memorias usb",
+        "precio": 299.90,
+        "stock": 15,
+        "imagen": "../../public/images/accesorios/5.jpg"
+    },
+    {
+        "id": 18,
+        "codigo": "A00006",
+        "nombre": "Mouse Dark Side™ 12400T wrd w/light PMO-S203DS",
+        "descripcion": "",
+        "categoria": "Accesorios",
+        "marca": "Mouse",
+        "precio": 179,
+        "stock": 15,
+        "imagen": "../../public/images/accesorios/6.jpg"
+    }
+   
+]
