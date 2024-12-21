@@ -1,34 +1,55 @@
-import { createContext, useState, useContext } from "react";
+import { createContext, useState, useContext, useEffect } from 'react';
 
-// Contexto del carrito
+// Creamos el contexto para el carrito
 const CartContext = createContext();
 
-// Proveedor del contexto
+// Proveedor del carrito
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  // Cargar el carrito desde localStorage o usar un carrito vacío
+  const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
+  const [cart, setCart] = useState(storedCart); // Inicializar el estado con el valor del localStorage
 
-  const addToCart = (product) => {
-    const existingProduct = cart.find((item) => item.id === product.id);
+  // Función para agregar productos al carrito
+  const addToCart = (producto, cantidad) => {
+    setCart((prevCart) => {
+      // Buscar si el producto ya existe en el carrito
+      const existingProductIndex = prevCart.findIndex((item) => item.idProducto === producto.idProducto);
 
-    if (existingProduct) {
-      setCart(
-        cart.map((item) =>
-          item.id === product.id
-            ? { ...item, quantity: item.quantity + product.quantity }
-            : item
-        )
-      );
-    } else {
-      setCart([...cart, product]);
-    }
+      if (existingProductIndex !== -1) {
+        // Si el producto ya existe, actualizar la cantidad
+        const updatedCart = [...prevCart];
+        updatedCart[existingProductIndex].cantidad += cantidad;
+        return updatedCart;
+      }
+
+      // Si no existe, agregar el producto al carrito con la cantidad
+      return [...prevCart, { ...producto, cantidad }];
+    });
   };
 
+  // Función para eliminar un producto del carrito
+  const removeFromCart = (idProducto) => {
+    setCart((prevCart) => prevCart.filter((item) => item.idProducto !== idProducto));
+  };
+
+  // Función para vaciar el carrito
+  const clearCart = () => {
+    setCart([]);
+  };
+
+  // Guardar el carrito en localStorage cada vez que se actualice
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
+
   return (
-    <CartContext.Provider value={{ cart, setCart, addToCart }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart }}>
       {children}
     </CartContext.Provider>
   );
 };
 
-// Hook para acceder al contexto
-export const useCart = () => useContext(CartContext);
+// Custom hook para usar el contexto del carrito
+export const useCart = () => {
+  return useContext(CartContext);
+};

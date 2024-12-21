@@ -20,7 +20,8 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
-      {product && <ItemDetail product={product} onAddToCart={addToCart} />} {/* Pasa addToCart como prop */}
+      {product && <ItemDetail product={product} onAddToCart={addToCart} />}{" "}
+      {/* Pasa addToCart como prop */}
     </div>
   );
 };

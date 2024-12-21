@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer">
         <div className="footer__column">
           <div>
-            <img src="../public/images/izitech.png" alt="Izitech logo" />
+            <img src="../../backend/images/izitech.png" alt="Izitech Logo" />
           </div>
           <div>
             <span>Sigue nuestras redes</span>

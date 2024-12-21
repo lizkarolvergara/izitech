@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "../../public/css/producto.css";
 
 const ItemDetail = ({ product, onAddToCart }) => {
@@ -16,44 +15,42 @@ const ItemDetail = ({ product, onAddToCart }) => {
     <section>
       <div className="flexcenter">
         <div className="uniqueproduct">
-          <div className="flexcenter">
-            <div className="uniqueproduct__img">
-              <img src={product.imagen} alt={product.nombre} />
+          <div className="uniqueproduct__img">
+            <img src={product.imagen} alt={product.nombre} />
+          </div>
+          <div>
+            <div className="margin">
+              <span className="uniqueproduct__tittle">{product.nombre}</span>
+              <span className="marca">{product.marca}</span>
+              <span className="disc__price">S/ {product.precio}</span>
             </div>
-            <div>
-              <div className="margin">
-                <span className="uniqueproduct__tittle">{product.nombre}</span>
-                <span className="marca">{product.marca}</span>
-                <span className="disc__price">S/ {product.precio}</span>
-              </div>
 
-              <div className="cantidad">
-                <input
-                  type="number"
-                  value={quantity}
-                  min="1"
-                  max="10"
-                  step="1"
-                  className="input-number"
-                  onChange={(e) => setQuantity(parseInt(e.target.value) || 1)}
-                />
-                <span>Máximo 10 unidades</span>
-              </div>
-
-              <div className="compra">
-                <button
-                  className="button-general"
-                  id="agregarCarrito"
-                  onClick={handleAddToCart}
-                >
-                  Agregar al carrito
-                </button>
-                <button className="button-general">
-                  Comprar ahora
-                </button>
-              </div>
-              <span>Unidades disponibles +10</span>
+            <div className="cantidad">
+              <input
+                type="number"
+                value={quantity}
+                min="1"
+                max="10"
+                step="1"
+                className="input-number"
+                onChange={(e) => setQuantity(parseInt(e.target.value) || 1)}
+              />
+              <span>Máximo 10 unidades</span>
             </div>
+
+            <div className="compra">
+              <button
+                className="button-general"
+                id="agregarCarrito"
+                onClick={handleAddToCart}
+              >
+                Agregar al carrito
+              </button>
+              <button className="button-general">
+                Comprar ahora
+              </button>
+            </div>
+            <span>Unidades disponibles +10</span>
           </div>
         </div>
       </div>
