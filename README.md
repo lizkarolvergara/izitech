@@ -12,11 +12,3 @@ Abrir dos terminales:
 -dentro de backend: node server.js
 -en la carpeta raiz: npm run dev (abrir este host)
 
-
-
-
-diapos:
-descripcion empresa, problematica, etc, todo lo que ya está
-principales pantallazos del sistema
-requerimientos funcionales
-subir al eva
